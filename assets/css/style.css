@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply m-0 p-0 bg-Black-100 text-White-100
+    }
+}
+@layer components{
+   .btn{
+      @apply h-[46px] w-[103px] bg-White-100 text-Black-200 rounded-[30px]
+   }
+   .title{
+      @apply text-28 font-semibold
+   }
+   .h3{
+    @apply font-semibold text-20
+   }
+}
+@layer utilities{
+    .header .header-bottom{
+        @apply h-[50px] flex justify-between items-center
+    }
+    .header .navbar ul li a{
+        @apply text-16 
+    }
+    .main_wrapper{
+        @apply container m-auto border
+    }
+    .genre{
+        @apply bg-Gray-100 rounded-full w-[60px] h-[22px] mt-2 text-center text-15 text-Gray-400
+    }
+    .sound{
+        @apply absolute right-10 top-2 text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex items-center justify-evenly cursor-pointer text-15
+    }
+    .like{
+        @apply absolute right-2 top-2 rounded-full h-[24px] w-[24px] bg-Gray-100 flex items-center justify-center cursor-pointer
+    }
+}
