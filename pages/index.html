@@ -2,128 +2,996 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple stash</title>
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
-    <!-- Main custom css -->
-     <link rel="stylesheet" href="../assets/css/output.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simple stash</title>
+
+  <!-- Main custom css -->
+  <link rel="stylesheet" href="../assets/css/output.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <!-- header -->
-    <header class="header">
-        <div class="header-bottom m-30">
-            <div class="flex gap-64 ">
-                <div class="logo">
-                    <a href="" aria-label="logo">
-                        <img src="../assets/image/Logo.png" alt="" width="220" height="50" alt="logo">
-                    </a>
-                </div>
-                <div class="navbar">
-                    <div id="mobile-menu-main" class="menu-main-menu">
-                        <ul role="list" class="menu h-[50px] flex items-center gap-32 ">
-                            <li><img src="../assets/image/search.png" alt="" width="24" height="24"></li>
-                            <li><a href="#" aria-label="Explore" >Explore</a></li>
-                            <li><a href="#" aria-label="Sampise">Sampise</a></li>
-                            <li><a href="#" aria-label="Kits">Kits</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center gap-28 h-[50px]">
-                <div class=" xl:hidden cursor-pointer" id="toggle"><img src="assets/image/toggle.png" alt="" width="48"></div>
-                <a href="" aria-label="Login"><button class="text-white hidden xl:block">Login</button></a>
-                <button class="btn hidden xl:block">
-                  <a href="#" role="link" aria-label="Signup"><span>Signup</span></a>
-                </button>
-                <p class="hidden xl:block text-Gray-100">|</p>
-                <div class="cart"><a href="#" role="link" aria-label="cart"><img src="../assets/image/shopicon.png" alt="" width="24" height="24"></a></div>
-              </div>
+  <!-- header -->
+  <header class="header">
+    <div class="header-bottom m-5 xl:m-30">
+      <div class="flex gap-64 ">
+        <div class="logo">
+          <a href="" aria-label="logo">
+            <img src="../assets/image/Logo.png" alt="" width="220" height="50" alt="logo">
+          </a>
         </div>
-
-    </header>
-    <!-- header end -->
-
-    <div class="main_wrapper">
-        <section class="latest_releases">
-            <div class="title ">
-                <p>Latest Releases</p>
-            </div>
-            <div class="grid grid-cols-6 gap-16 border p-2">
-                <div class="border">
-                    <div class="relative">
-                      <img src="../assets/image/kid1.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-                  <div >
-                    <div class="relative"><img src="../assets/image/kid2.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-                  <div >
-                    <div class="relative"><img src="../assets/image/kid3.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-                  <div >
-                    <div class="relative"><img src="../assets/image/kid4.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-                  <div >
-                    <div class="relative"><img src="../assets/image/kid5.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-                  <div >
-                    <div class="relative"><img src="../assets/image/kid6.png" alt="" width="209.5" height="209.5">
-                      <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
-                      <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
-                    </div>
-                    <div>
-                      <h2 class="h3">Kit Name</h2>
-                      <p class="text-15 text-Gray-300">Producer Name</p>
-                      <div class="genre"><span>Genre</span></div>
-                    </div>
-                  </div>
-            </div>
-        </section>
+        <div class="navbar">
+          <div id="mobile-menu-main" class="menu-main-menu">
+            <ul role="list" class="menu h-[50px] flex items-center gap-32 ">
+              <li><img src="../assets/image/search.png" alt="" width="24" height="24"></li>
+              <li><a href="#" aria-label="Explore">Explore</a></li>
+              <li><a href="#" aria-label="Sampise">Sampise</a></li>
+              <li><a href="#" aria-label="Kits">Kits</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center xl:gap-28 h-[50px]">
+        <div class=" xl:hidden cursor-pointer" id="toggle"><img src="../assets/image/toggle.png" alt="" width="48"
+            height="48"></div>
+        <a href="" aria-label="Login"><button class="text-white hidden xl:block">Login</button></a>
+        <button class="btn hidden xl:block">
+          <a href="#" role="link" aria-label="Signup"><span>Signup</span></a>
+        </button>
+        <p class="text-Gray-100 mx-21">|</p>
+        <div class="cart"><a href="#" role="link" aria-label="cart"><img src="../assets/image/shopicon.png" alt=""
+              width="24" height="24"></a></div>
+      </div>
     </div>
-    
+
+  </header>
+  <!-- header end -->
+
+  <!-- banner -->
+  <section class="banner overflow-hidden mb-[50px]">
+    <div class="container slider-column">
+      <div class="swiper announcement relative w-screen h-[593px] md:h-[700px] xl:mb-[100px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide rounded-2xl overflow-hidden relative"><img  src="../assets/image/slid1.png" alt="Swiper" class="h-full w-full">
+            <div class="contain"><h1 class="h1">After Hours</h1>
+          <p>An eclectic mix or smooth jazz sounds to encourage the ever loving baby making process</p> 
+          <div>
+              <button class="btn_banner">browse pack</button>
+          </div>
+        </div>
+        <div class="play absolute bottom-0 m-5"><img src="../assets/image/play.png" alt="" width="56px"></div>
+      </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden relative"><img  src="../assets/image/slid3.png" alt="Swiper" class="h-full w-full">
+            <div class="contain "><h1 class="h1">After Hours</h1>
+          <p >An eclectic mix or smooth jazz sounds to encourage the ever loving baby making process</p> 
+          <div>
+              <button class="btn_banner">browse pack</button>
+          </div>
+        </div>
+        <div class="play absolute bottom-0 m-5"><img src="../assets/image/play.png" alt="" width="56px"></div>
+      </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden relative"><img  src="../assets/image/slid2.png" alt="Swiper" class="h-full w-full">
+            <div class="contain "><h1 class="h1">After Hours</h1>
+          <p >An eclectic mix or smooth jazz sounds to encourage the ever loving baby making process</p>
+          <div>
+              <button class="btn_banner">browse pack</button>
+           </div> 
+        </div>
+        <div class="play absolute bottom-0 m-5"><img src="../assets/image/play.png" alt="" width="56px"></div>
+      </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden relative"><img  src="../assets/image/slid1.png" alt="Swiper" class="h-full w-full">
+            <div class="contain "><h1 class="h1">After Hours</h1>
+          <p >An eclectic mix or smooth jazz sounds to encourage the ever loving baby making process</p> 
+          <div>
+              <button class="btn_banner">browse pack</button>
+          </div>
+        </div>
+        <div class="play absolute bottom-0 m-5"><img src="../assets/image/play.png" alt="" width="56px"></div>
+      </div>
+          <div class="swiper-slide rounded-2xl overflow-hidden relative"><img  src="../assets/image/slid2.png" alt="Swiper" class="h-full w-full">
+            <div class="contain" ><h1 class="h1">After Hours</h2>
+          <p class="tracking-wide">An eclectic mix or smooth jazz sounds to encourage the ever loving baby making process</p> 
+          <div>
+              <button class="btn_banner">browse pack</button>
+          </div>
+        </div>
+        <div class="play "><img src="../assets/image/play.png" alt="" width="56px"></div>
+      </div>
+        </div>
+        <span class="swiper-pagination"></span>
+        <span class="announcement-prev swiper-button-prev"><img src="../assets/image/prev button.png" alt="" width="6px"></span>  
+        <span class="announcement-next swiper-button-next"><img src="../assets/image/next button.png" alt="" width="6px"></span>
+      </div>
+    </div>
+  </section>
+   <!-- banner end -->
+
+  <div class="main_wrapper">
+    <!-- latest_releases -->
+    <section class="latest_releases mb-[50px] xl:mb-[100px] ">
+      <div class="title ">
+        <p>Latest Releases</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-16 p-2">
+        <div>
+          <div class="relative">
+            <img src="../assets/image/kid1.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="relative"><img src="../assets/image/kid2.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="relative"><img src="../assets/image/kid3.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="relative"><img src="../assets/image/kid4.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="relative"><img src="../assets/image/kid5.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="relative"><img src="../assets/image/kid6.png" alt="" width="209.5" height="209.5">
+            <div class="absolute 991:right-2 right-12 top-2 flex gap-2">
+              <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+              <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+            </div>
+          </div>
+          <div>
+            <h2 class="h3">Kit Name</h2>
+            <p class="text-15 text-Gray-300">Producer Name</p>
+            <div class="genre"><span>Genre</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- latest_releases end -->
+
+    <!-- trending -->
+    <section class="trending  xl:mb-[100px]">
+      <div class="title flex justify-between">
+        <div class=" gap-12 flex items-center">
+          <img src="../assets/image/fire.png" alt=""  >
+          <p>Trending Kids</p>
+        </div>
+        <div class="slider-button">
+          <div class="prev-btn">
+          <span class="trending-swiper-prev swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 15 15" fill="none">
+              <path d="M13.3334 7.33382H1.66675M1.66675 7.33382L7.50008 13.1672M1.66675 7.33382L7.50008 1.50049"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </div>
+        <div class="next-btn">
+          <span class="trending-swiper-next swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 14 15" fill="none">
+              <path d="M1.33337 7.33382H13M13 7.33382L7.16671 1.50049M13 7.33382L7.16671 13.1672" stroke="white"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </div>
+        </div>
+      </div>
+
+      <div class="swiper trending-swiper h-[387px]">
+        <div class="swiper-wrapper p-2">
+          <div class="swiper-slide rounded overflow-hidden relative ">
+            <div class="relative ps-1">
+              <img src="../assets/image/trendslid1.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div class="ps-1">
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative ps-1"><img src="../assets/image/trendslid2.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div class="ps-1">
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative ps-1"><img src="../assets/image/trendslid3.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div class="ps-1">
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative"><img src="../assets/image/trendslid4.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div>
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative"><img src="../assets/image/trendslid5.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div>
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative">
+              <img src="../assets/image/trendslid1.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div>
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative"><img src="../assets/image/trendslid2.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div>
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide rounded overflow-hidden relative">
+            <div class="relative"><img src="../assets/image/trendslid3.png" alt="" class="slid-img">
+              <div class="socil-icon">
+                <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+              </div>
+              <div class="play_btn"><a href="" aria-label="link"><img src="../assets/image/play_btn.png" alt=""
+                    class="mt-4 ms-4"></a></div>
+            </div>
+            <div>
+              <h2 class="h3">Kit Name</h2>
+              <p>Producer Name</p>
+              <div class="flex items-center gap-2 ">
+                <div><img src="../assets/image/fire.png" alt="" width="20px" height="20px" class="mt-2.5"></div>
+                <div class="genre"><span>Genre</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="swiper-pagination"></span>
+
+
+      </div>
+    </section>
+    <!-- trending end-->
+
+    <!-- stash exclusives -->
+         <section class="stash-exclusives xl:mb-[100px]">
+          <div class="title flex justify-between">
+            <div>
+              <p>Sample Stash Exclusives</p>
+            </div>
+            <div class="slider-button">
+              <div class="prev-btn">
+              <span class="exclusives-swiper-prev swiper-button-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 15 15" fill="none">
+                  <path d="M13.3334 7.33382H1.66675M1.66675 7.33382L7.50008 13.1672M1.66675 7.33382L7.50008 1.50049"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="next-btn">
+              <span class="exclusives-swiper-next swiper-button-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 14 15" fill="none">
+                  <path d="M1.33337 7.33382H13M13 7.33382L7.16671 1.50049M13 7.33382L7.16671 13.1672" stroke="white"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            </div>
+          </div>
+          <div class="swiper exclusives-swiper  relative w-full h-[387px]">
+            <div class="swiper-wrapper p-2">
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid1.png" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div class="p-1">
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid2.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid3.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid4.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 "> <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid5.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 "> <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative "><img src="../assets/image/simpleslid1.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid2.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="../assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="../assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative p-2">
+                <div class="relative"><img src="../assets/image/simpleslid3.png" alt="" class="slid-img">
+                  <div class="socil-icon">
+                  <div class="sound"><img src="assets/image/sound.png" alt="" width="16px"><span>20</span></div>
+                  <div class="like"><img src="assets/image/like.png" alt="" width="16px"></div>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="h3">Kit Name</h2>
+                  <p>Producer Name</p>
+                  <div class="flex items-center gap-2 ">  <div class="genre"><span>Genre</span></div></div>
+                </div>
+              </div>
+            </div>
+      </div>
+        </section>
+     <!-- stash exclusives end-->
+
+     <!-- trending list -->
+     <section class="trending-list md-[50px] xl:mb-[100px]">
+          <div class="title flex justify-between">
+            <div class=" gap-12 flex items-center">
+              <img src="../assets/image/fire.png" alt=""  >
+              <p>Trending Kids</p>
+            </div>
+            <a href="" aria-label="view all"><div class="flex items-center gap-3 xl:me-10"><h2 class="h2">View All</h2><img src="../assets/image/next button.png" alt="" width="24" height="24" class="p-2"></div></a>
+         </div>
+        <div>
+          <div class="list">
+            <div><img src="../assets/image/tableimg1.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/table_play.png" alt="" width="24" height="24"></div>
+            <div class="list_items"><img src="../assets/image/audio.png" alt="" width="360"></div>
+            <div class="list_text"><p>SLS_SS_85_music_loop_resampide_soul..</p><span class="text-gray-500">The Simple Stash</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/bag.png" alt="" width="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/simpleslid5.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>OV_SV_85_vocal_full_patince_2_A#m.wav</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/table_right.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/tableimg3.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>DS_PST_80_songstarter_sun_Emin.wav</p><span class="text-gray-500">Mike Devries</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/bag.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/tableimg4.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>JJP_RRNB_94_drum_loop_candy.wav</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/table_right.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/trendslid4.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>Euphoria_Tangering</p><span class="text-gray-500">Casky</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/bag.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/trendslid5.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13px" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>Sample Name</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/table_right.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/simpleslid4.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>Sample Name</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/bag.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/tableimg5.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>Sample Name</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/table_right.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="list">
+            <div><img src="../assets/image/tableimg6.png" alt="" width="60" height="60"></div>
+            <div><img src="../assets/image/play_btn.png" alt="" width="13" height="13"></div>
+            <div class="list_items"><img src="../assets/image/audio2.png" alt="" width="360"></div>
+            <div class="list_text"><p>Sample Name</p><span class="text-gray-500">Dylan Graham</span></div>
+            <div class="list_items"><img src="../assets/image/fire.png" alt="" width="20" height="20"></div>
+            <div class="list_items"><span class="list_btn">STEMS</span></div>
+            <div class="list_items"><span>instrument</span></div>
+            <div class="list_items"><span>Genre</span></div>
+            <div class="list_items"><span>80 BPM</span></div>
+            <div class="list_items"><span>A# minor</span></div>
+            <div><span><img src="../assets/image/bag.png" alt="" width="20" height="20"></span></div>
+            <div class="list_items"><span><img src="../assets/image/list-like.png" alt="" width="20" height="20"></span></div>
+            <div><span><img src="../assets/image/more.png" alt="" width="20" height="20"></span></div>
+          </div>
+
+          <div class="pages">
+            <div class="w-[150px] grid grid-cols-4 gap-4  items-center">
+              <div><img src="../assets/image/prev button.png" alt="" width="7px"></div>
+              <div class="number"><span>1</span></div>
+              <div class="number2"><span>2</span></div>
+              <div><img src="../assets/image/next button.png" alt="" width="7px"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+     <!-- trending list end -->
+
+     <!-- Browse by genar -->
+     <section class="browse mb-[50px] xl:mb-[100px]">
+          <div class="title">
+            <p>Browse by Genre</p>
+          </div>
+        
+        <div class="browse-genar">
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse1.png" alt="" class="h-full w-full grayscale">
+            <div class="murges"></div>
+            <div class="text"><p>Soul/R&B</p></div>
+          </div>
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse2.png" alt="" class="h-full w-full grayscale">
+            <div class="murges "></div>
+            <div class="text"><p>Hip Hop</p></div>
+          </div>
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse3.png" alt="" class="h-full w-full grayscale">
+            <div class="murges "></div>
+            <div class="text"><p>Pop</p></div>
+          </div>
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse4.png" alt="" class="h-full w-full grayscale">
+            <div class="murges "></div>
+            <div class="text"><p>Afrobeat</p></div>
+          </div>
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse5.png" alt="" class="h-full w-full grayscale">
+            <div class="murges "></div>
+            <div class="text"><p>Trap</p></div>
+          </div>
+          <div class="browse-murge relative">
+            <img src="../assets/image/browse6.png" alt="" class="h-full w-full grayscale">
+            <div class="murges "></div>
+            <div class="text"><p>Mulit</p></div>
+          </div>
+        </div>
+     </section>
+     <!-- Browse by genar end -->
+
+     <!-- top creater -->
+     <section class="top-creaters mb-[50px] xl:mb-[100px]">
+        <div class="title flex justify-between">
+          <div >
+            <p>Top creators</p>
+          </div>
+          <div class="slider-button">
+            <div class="prev-btn">
+            <span class="creater-swiper-prev swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 15 15" fill="none">
+                <path d="M13.3334 7.33382H1.66675M1.66675 7.33382L7.50008 13.1672M1.66675 7.33382L7.50008 1.50049"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+          <div class="next-btn">
+            <span class="creater-swiper-next swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11.67" height="11.67" viewBox="0 0 14 15" fill="none">
+                <path d="M1.33337 7.33382H13M13 7.33382L7.16671 1.50049M13 7.33382L7.16671 13.1672" stroke="white"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+          </div>
+          </div>
+        <div>
+          <div class="swiper creater-swiper w-full h-[321px] relative">
+
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide rounded overflow-hidden relative">
+                <div>
+                <div class="flex justify-center relative">
+                  <div class="creater">
+                    <img src="../assets/image/creater1.png" alt="" width="253" height="253">
+                  </div>
+                  <div class="creaters">
+                    <div class="creaters_items">
+                      <img src="../assets/image/kid3.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="creaters_items">
+                      <img src="../assets/image/trendslid2.png" alt=""  class="w-full h-full">
+                    </div>
+                    <div class="creaters_items">
+                      <img src="../assets/image/trendslid1.png" alt="" class="w-full h-full">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+              </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative ">
+                <div>
+                  <div class="flex justify-center relative">
+                    <div class="creater">
+                      <img src="../assets/image/creater2.png" alt=""  width="253" height="253">
+                    </div>
+                    <div class="creaters">
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid3.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items ">
+                        <img src="../assets/image/kid3.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid1.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative ">
+                <div>
+                  <div class="flex justify-center relative">
+                    <div class="creater">
+                      <img src="../assets/image/creater3.png" alt=""  width="253" height="253">
+                    </div>
+                    <div class="creaters">
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid5.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid2.png" alt=""  class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid2.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative">
+                <div>
+                  <div class="flex justify-center relative">
+                    <div class="creater">
+                      <img src="../assets/image/creater4.png" alt=""  width="253" height="253">
+                    </div>
+                    <div class="creaters">
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid5.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid3.png" alt=""  class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid1.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+                </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative">
+                <div>
+                  <div class="flex justify-center relative">
+                    <div class="creater">
+                      <img src="../assets/image/creater5.png" alt=""  width="253" height="253">
+                    </div>
+                    <div class="creaters">
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid1.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid3.png" alt=""  class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid5.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+                </div>
+              </div> 
+              <div class="swiper-slide rounded overflow-hidden relative ">
+                <div>
+                <div class="flex justify-center relative">
+                  <div class="creater">
+                    <img src="../assets/image/creater1.png" alt=""  width="253" height="253">
+                  </div>
+                  <div class="creaters">
+                    <div class="creaters_items">
+                      <img src="../assets/image/kid3.png" alt="" class="w-full h-full">
+                    </div>
+                    <div class="creaters_items">
+                      <img src="../assets/image/trendslid2.png" alt=""  class="w-full h-full">
+                    </div>
+                    <div class="creaters_items">
+                      <img src="../assets/image/trendslid1.png" alt="" class="w-full h-full">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+              </div>
+              </div>
+              <div class="swiper-slide rounded overflow-hidden relative ">
+                <div>
+                  <div class="flex justify-center relative">
+                    <div class="creater">
+                      <img src="../assets/image/creater2.png" alt=""  width="253" height="253">
+                    </div>
+                    <div class="creaters">
+                      <div class="creaters_items">
+                        <img src="../assets/image/trendslid3.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items ">
+                        <img src="../assets/image/kid3.png" alt="" class="w-full h-full">
+                      </div>
+                      <div class="creaters_items">
+                        <img src="../assets/image/kid1.png" alt="" class="w-full h-full">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-center pt-3"><h3 class="h4">Dylan Graham</h3></div>
+                </div>
+              </div>
+            </div>
+      </div>
+        </div>
+    </section>
+      <!-- top creater end -->
+
+     <!-- contact -->
+     <section class="contacts mb-[50px] ">
+      
+          <div class="w-full flex flex-wrap gap-24 ">
+          <div class="contact w-full lg:w-[492px] bg-Black-300">
+            <div class="p-20">
+              <div ><h2 class="text-24 xl:text-38 font-700 leading-46">Access all purchases & <span class="text-[#0269ff]">instans</span> downlads</h2></div>
+              <div class=" text-Gray-600 mt-20"><p>After purchas , you can immediately access your packs and samples in your account. Enjoy instant availability of your purchased contend.</p></div>
+            </div>
+            <div class="lg:absolute bottom-0 left-0 "><img src="../assets/image/chat.png" alt="" width="90%"></div>
+          </div>
+          <div class="contact flex flex-wrap w-full lg:w-[962px]">
+            <div class="contact-items-1 ">
+              <div ><h2 class="text-24 xl:text-38 font-700 leading-46"><span class="text-[#0269ff]">Only quality</span> from the industries leading producers!</h2></div>
+              <div class=" text-Gray-600 mt-20"><p>After purchas ,you can immediately access your packs and samples in your account. Enjoy instant availability of your purchased contend.</p></div>
+              <div class="contact_btn"><a href=""><span>SHOP KITS</span></a> <img src="../assets/image/bag.png" alt="" width="20px"></div>
+            </div>
+            <div class=" w-full xl:w-[70%] ms-auto h-full"><img src="../assets/image/contact_img1.png" alt="" class="h-full w-full"></div>
+            
+          </div>
+        </div>
+          <div class="contact1 w-full h-auto xl:h-[408px] relative mt-16 ">
+            <div class="absolute right-0 bottom-0 w-[700px] sm:w-auto  xl:h-full"><img src="../assets/image/contact_desing.png" alt="" class="h-full"></div>
+            <div class="flex flex-wrap justify-evenly items-center h-full">
+              <div class="w-full xl:w-[596px] z-10 p-30">
+                <div ><h2 class="text-24 xl:text-38 font-700 sm:leading-46">Don't Let Your Stash Run Dry! Get Alerts on <span class="text-[#0269ff]">New Sound Packs</span>!</h2></div>
+                <div class=" text-Gray-600 mt-20"><p>Join our exclusive mailing list and ensure yout sound librany is always stocks with the freshest packs and samples. Get notified about exclusive releases and updates form The Sample Stash.</p></div>
+              </div>
+              <div class="w-full xl:w-[637px] z-10 mt-10 p-10">
+                <div>
+                  <form action="">
+                    <div class="p-5 font-bold text-xl"> <label for="your email">Your Email</label></div>
+                   
+                    <div class="email">
+                      <div class="mail p-2 bg-white"><input type="email" placeholder="Your@email.com" aria-required="true"></div>
+                      <div class="message_btn"><a href="" role="button"><button class="contact_btn1 "><span>JOIN NEWSLETTER</span><img src="../assets/image/mail_icon.png" alt="" width="20px"></button></a></div>
+                    </div>
+                  </form>
+                </div>
+                <div class="text-Gray-600 mt-20"><p>Your Privacy is our priority. we'll never sell your data, and it's used exclusively for The Sample Stash updates. Unsubscribe anytime.</p></div>
+              </div>
+            </div>
+            
+          </div>
+       
+    </section>
+      <!-- contact end -->
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="xl:flex justify-between items-center p-25 h-full">
+      <div class="flex flex-wrap items-center justify-center gap-10">
+        <div class="logo text-white">
+          <a href="" aria-label="logo">
+            <img src="../assets/image/Logo.png" alt="" width="220" height="50" alt="logo">
+          </a>
+        </div>
+        <div class="hidden xl:block">
+          <a href="" role="link">
+            <p class="text-gray-600">@ The Sample Stash 2025</p>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <ul class="xl:flex gap-6 text-gray-500 text-center ">
+          <li class="text-white"><a href="">Expiore</a></li>
+          <li><a href="#" aria-label="Samples">Samples</a></li>
+          <li class="hidden xl:block"> <span>|</span></li>
+          <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+          <li><a href="#" aria-label="Terms of Use">Terms of Use</a></li>
+        </ul>
+
+        <div class="text-center mt-5 block xl:hidden">
+          <a href="" role="link">
+            <p class="text-gray-600">@ The Sample Stash 2025</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
 
 </html>
