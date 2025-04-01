@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply m-0 p-0 bg-Black-100 text-White-100
+        @apply m-0 p-0 bg-Black-100 text-White-100 font-inter
     }
 
     * {
@@ -26,7 +26,7 @@
 
 @layer components {
     .btn {
-        @apply h-[46px] w-[103px] bg-White-100 text-Black-200 rounded-[30px];
+        @apply h-46 w-[103px] bg-White-100 text-Black-200 rounded-full pt-2.5 ps-6 font-600 hover:bg-White-200 hover:shadow-sm hover:shadow-White-100;
     }
 
     .swiper-button-next,
@@ -35,15 +35,15 @@
     }
 
     .slid-img {
-        @apply h-[173.6px] sm:h-[252.2px] w-[173.6px] sm:w-[252.2px]
+        @apply h-173  479:h-[250px] sm:h-252 w-173  479:w-[250px] sm:w-252
     }
 
     .title {
-        @apply text-20 md:text-28 font-semibold mb-28
+        @apply text-20 md:text-28 font-semibold mb-28 font-Circular
     }
 
     .title img {
-        @apply h-[24px] w-[24px] xl:h-[28px] xl:w-[28px]
+        @apply h-24 w-24 xl:h-28 xl:w-28
     }
 
     .h1 {
@@ -57,15 +57,18 @@
     }
 
     .genre {
-        @apply bg-Gray-100 rounded-full w-[60px] h-[22px] mt-2 text-center text-15 text-Gray-400
+        @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400
     }
 }
 
 @layer utilities {
 
     /* header */
+    .header{
+        @apply sticky top-0 border border-Black-100 bg-Black-100 z-30
+    }
     .header .header-bottom {
-        @apply h-[50px] flex justify-between items-center
+        @apply h-[50px] flex justify-between items-center 
     }
 
     .header .logo {
@@ -73,28 +76,61 @@
     }
 
     .header .navbar {
-        @apply hidden md:block
+        @apply hidden xl:block
     }
 
-    .header .navbar ul li a {
-        @apply text-16 hover:border-b 
+    .header .navbar ul{
+        @apply h-[50px] flex items-center gap-32 cursor-pointer
     }
+    .header .navbar ul li a {
+        @apply text-16 hover:border-b
+    }
+    /* menu */
+    .menubar{
+        @apply fixed right-0 top-[50px] z-30 bg-Black-100  h-auto w-[300px]  items-center p-20 text-20 font-700 hidden 
+    }
+    .menubar a:hover{
+        @apply  border-b
+    }
+    /* search */
+    .search{
+        @apply absolute top-[100px] z-30 h-[80px] p-3  bg-Black-100 rounded-xl hidden shadow-md shadow-Gray-100
+    }
+    .search .search-items{
+        @apply flex items-center gap-3 h-full
+    }
+    .search .search-items input{
+        @apply w-[400px] bg-transparent p-3 border border-White-300 rounded-full
+    }
+    .search .search-items input::placeholder{
+        @apply text-White-100
+    }
+    .search .search-items .close{
+        @apply border border-White-300 p-3 rounded-full cursor-pointer
+    }
+   
 
     /* banner */
-    .announcement .swiper-pagination {
-        /* @apply bg-white */
+    .announcement .swiper-pagination-bullet{
+        @apply border-White-100 border-2 h-13 w-13
+    }
+    .announcement .swiper-pagination-bullet-active {
+        @apply bg-White-100 
+    }
+    .announcement img{
+        @apply scale-110 xl:scale-100
     }
 
     .announcement .announcement-prev {
-        @apply h-[124px] w-[38px] bg-White-300 absolute left-0 top-64 rounded-r-xl invisible xl:visible
+        @apply h-124 w-38 bg-Black-500 absolute left-0 top-64 rounded-r-xl invisible xl:visible
     }
 
     .announcement .announcement-next {
-        @apply h-[124px] w-[38px] bg-White-300 absolute right-0 top-64 rounded-l-xl invisible xl:visible
+        @apply h-124 w-38 bg-Black-500 absolute right-0 top-64 rounded-l-xl invisible xl:visible
     }
 
     .announcement .contain {
-        @apply absolute left-20 bottom-52 text-center p-20 xl:w-[60%] 
+        @apply absolute sm:left-20 bottom-52 text-center p-20 xl:w-[60%] 
     }
 
     .announcement .contain p {
@@ -102,12 +138,15 @@
     }
 
     .announcement .contain .btn_banner {
-        @apply w-[186px] xl:w-[214px] h-[48px] xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36
+        @apply w-186 xl:w-[214px] h-48 xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36
+    }
+    .announcement .play{
+        @apply absolute bottom-5 left-5 animate-pulse
     }
 
 
     .main_wrapper {
-        @apply container xl:w-[1480px] m-auto
+        @apply  xl:w-[1480px]  m-auto p-2 xl:p-0
     }
 
     .socil-icon {
@@ -115,15 +154,15 @@
     }
 
     .sound {
-        @apply text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex items-center justify-evenly cursor-pointer text-15
+        @apply text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex justify-center gap-2  cursor-pointer text-15
     }
 
     .like {
-        @apply rounded-full h-[24px] w-[24px] bg-Gray-100 flex items-center justify-center cursor-pointer
+        @apply rounded-full h-24 w-24 bg-Gray-100 flex items-center justify-center cursor-pointer
     }
 
     .trending-swiper .play_btn {
-        @apply absolute top-[40%] left-[40%] h-[46px] w-[46px] rounded-full bg-[#0269ff] hidden cursor-pointer
+        @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-[#0269ff] hidden cursor-pointer
     }
 
     .trending-swiper .swiper-slide {
@@ -133,13 +172,13 @@
     .trending-swiper .swiper-slide:hover .play_btn {
         @apply block
     }
-
+   
     .slider-button {
-        @apply w-[87.33px] flex items-center justify-between
+        @apply w-87 flex items-center justify-between gap-2
     }
 
     .prev-btn, .next-btn {
-        @apply h-[35.67px] w-[35.67px] rounded-full bg-Gray-100 pt-17 ps-12
+        @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-12
     }
 
     /* trending-list */
@@ -171,7 +210,7 @@
     }
 
     .browse .browse-murge {
-        @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden
+        @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden 
     }
 
     .browse .browse-murge .murges {
@@ -179,7 +218,7 @@
     }
 
     .browse .browse-murge .text {
-        @apply absolute top-0 left-0 h-full w-full flex justify-center items-center font-semibold text-24 md:text-28
+        @apply absolute top-0 left-0 h-full w-full flex justify-center items-center font-semibold text-24 md:text-28 font-Circular
     }
 
     .browse .title {
@@ -199,37 +238,41 @@
         @apply h-auto xl:h-[492px] rounded-3xl my-5 overflow-hidden relative 
     }
     .contact p,.contact1 p{
-        @apply text-[16px]
+        @apply text-16
     }
     .contact-items-1{
-        @apply w-full xl:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 py-50 bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c]
+        @apply w-full xl:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 py-50 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c]
     }
     .contact1{
         @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0
     }
     .contact_btn{
-        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-[147px] h-[40px] mt-20
+        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-[147px] h-40 mt-20
     }
     .message_btn{
         @apply w-full xl:w-[262px] 
     }
     .contact_btn1{
-        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-full h-[40px] mt-4 xl:mt-0 
+        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-full h-40 mt-4 xl:mt-0 
     }
     .mail{
-        @apply flex items-center ps-4 bg-white rounded-full w-full xl:w-[211px] h-[40px] 
+        @apply flex items-center ps-4 bg-white rounded-full w-full xl:w-[211px] h-40 
     }
     input::placeholder{
         @apply text-Black-400 text-16
     }
     .email{
-        @apply h-auto xl:h-[60px] flex flex-wrap items-center justify-between p-3 rounded-full xl:bg-white   
+        @apply h-auto xl:h-60 flex flex-wrap items-center justify-between p-3 rounded-full xl:bg-white   
     }
 
 
     /* footer */
     footer {
         @apply bg-black xl:h-[113px]
+    }
+    footer li{
+        @apply mt-10 xl:mt-auto
+
     }
 
 }

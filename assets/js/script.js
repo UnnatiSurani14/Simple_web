@@ -1,3 +1,27 @@
+ // toggle
+let toggle = document.getElementById("toggle");
+let menu = document.getElementById("menu");
+
+toggle.addEventListener("click", function () {
+  if (menu.style.display === "none" || menu.style.display === "") {
+    menu.style.display = "block"; 
+  } else {
+    menu.style.display = "none";  
+  }
+});
+
+ // search
+let search=document.getElementById("search-icon")
+let searchbar=document.getElementById("search")
+let close=document.getElementById("close")
+search.addEventListener("click",function(){
+  searchbar.style.display="block";
+})
+close.addEventListener("click",function(){
+  searchbar.style.display="none";
+})
+
+  // benner
 const announcementSwiper = new Swiper(".announcement", {
     centeredSlides: true,
     slidesPerView: 1,
@@ -32,6 +56,7 @@ const announcementSwiper = new Swiper(".announcement", {
     },
   });
 
+  // tranding-slider
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".trending-swiper", {
         loop: true,
@@ -46,13 +71,14 @@ document.addEventListener("DOMContentLoaded", function () {
         spaceBetween: 16,
         breakpoints: {
                   320: { slidesPerView: 1.5 },
-                  760: { slidesPerView: 2.5 },
+                  660: { slidesPerView: 2.5 },
                   1024: { slidesPerView: 4 },
                   1280: { slidesPerView: 5 },
                 }
     });
 });
   
+  // exclusives-slider
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".exclusives-swiper", {
         loop: true,
@@ -74,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 }); 
 
+  // creaters-slider
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".creater-swiper", {
         loop: true,
