@@ -246,7 +246,7 @@
         @apply text-16;
     }
     .contact-items-1{
-        @apply w-full xl:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 xl:py-70 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c];
+        @apply w-full md:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 xl:py-70 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c];
     }
     .contact1{
         @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0;
