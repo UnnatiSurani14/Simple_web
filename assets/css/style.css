@@ -8,11 +8,11 @@
     }
 
     * {
-        @apply m-0 p-0 box-border
+        @apply m-0 p-0 box-border;
     }
 
     *::-webkit-scrollbar-track {
-        @apply bg-black
+        @apply bg-black;
     }
 
     *::-webkit-scrollbar {
@@ -31,33 +31,33 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-        @apply after:hidden
+        @apply after:hidden;
     }
 
     .slid-img {
-        @apply h-173  479:h-[250px] sm:h-252 w-173  479:w-[250px] sm:w-252
+        @apply h-173  479:h-[250px] sm:h-252 w-173  479:w-250 sm:w-252;
     }
 
     .title {
-        @apply text-20 md:text-28 font-semibold mb-28 font-Circular
+        @apply text-20 md:text-28 font-semibold mb-28 font-Circular;
     }
 
     .title img {
-        @apply h-24 w-24 xl:h-28 xl:w-28
+        @apply h-24 w-24 xl:h-28 xl:w-28;
     }
 
     .h1 {
-        @apply text-54 xl:text-64 font-bold
+        @apply text-54 xl:text-64 font-bold;
     }
     .h2{
-        @apply text-16 md:text-20 font-600
+        @apply text-16 md:text-20 font-600;
     }
     .h3 {
-        @apply font-semibold text-20 mt-2
+        @apply font-semibold text-20 mt-2;
     }
 
     .genre {
-        @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400
+        @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400;
     }
 }
 
@@ -65,219 +65,226 @@
 
     /* header */
     .header{
-        @apply sticky top-0 border border-Black-100 bg-Black-100 z-30
+        @apply sticky top-0 border border-Black-100 bg-Black-100 z-30;
     }
     .header .header-bottom {
-        @apply h-[50px] flex justify-between items-center 
+        @apply h-50 flex justify-between items-center; 
     }
 
     .header .logo {
-        @apply w-[176px] xl:w-[220px]
+        @apply w-[176px] xl:w-[220px];
     }
 
     .header .navbar {
-        @apply hidden xl:block
+        @apply hidden xl:block;
     }
 
     .header .navbar ul{
-        @apply h-[50px] flex items-center gap-32 cursor-pointer
+        @apply h-50 flex items-center gap-32 cursor-pointer;
     }
     .header .navbar ul li a {
-        @apply text-16 hover:border-b
+        @apply text-16 hover:border-b;
     }
     /* menu */
     .menubar{
-        @apply fixed right-0 top-[50px] z-30 bg-Black-100  h-auto w-[300px]  items-center p-20 text-20 font-700 hidden 
+        @apply fixed right-0 top-[50px] z-30 bg-Black-100  h-auto w-[300px]  items-center p-20 text-20 font-700 hidden ;
     }
     .menubar a:hover{
-        @apply  border-b
+        @apply  border-b;
     }
     /* search */
     .search{
-        @apply absolute top-[100px] z-30 h-[80px] p-3  bg-Black-100 rounded-xl hidden shadow-md shadow-Gray-100
+        @apply absolute top-[100px] z-30 h-[80px] p-3  bg-Black-100 rounded-xl hidden shadow-md shadow-Gray-100;
     }
     .search .search-items{
-        @apply flex items-center gap-3 h-full
+        @apply flex items-center gap-3 h-full;
     }
     .search .search-items input{
-        @apply w-[400px] bg-transparent p-3 border border-White-300 rounded-full
+        @apply w-[400px] bg-transparent p-3 border border-White-300 rounded-full;
     }
     .search .search-items input::placeholder{
-        @apply text-White-100
+        @apply text-White-100;
     }
     .search .search-items .close{
-        @apply border border-White-300 p-3 rounded-full cursor-pointer
+        @apply border border-White-300 p-3 rounded-full cursor-pointer;
     }
    
 
     /* banner */
     .announcement .swiper-pagination-bullet{
-        @apply border-White-100 border-2 h-13 w-13
+        @apply border-White-100 border-2 h-13 w-13;
     }
     .announcement .swiper-pagination-bullet-active {
-        @apply bg-White-100 
+        @apply bg-White-100 ;
     }
     .announcement img{
-        @apply scale-110 xl:scale-100
+        @apply scale-110 xl:scale-100;
     }
 
     .announcement .announcement-prev {
-        @apply h-124 w-38 bg-Black-500 absolute left-0 top-64 rounded-r-xl invisible xl:visible
+        @apply h-124 w-38 bg-Black-500 absolute left-0 top-64 rounded-r-xl invisible xl:visible;
     }
 
     .announcement .announcement-next {
-        @apply h-124 w-38 bg-Black-500 absolute right-0 top-64 rounded-l-xl invisible xl:visible
+        @apply h-124 w-38 bg-Black-500 absolute right-0 top-64 rounded-l-xl invisible xl:visible;
     }
 
     .announcement .contain {
-        @apply absolute sm:left-20 bottom-52 text-center p-20 xl:w-[60%] 
+        @apply absolute sm:left-20 bottom-52 text-center p-20 xl:w-[60%] ;
     }
 
     .announcement .contain p {
-        @apply xl:text-28 mt-5
+        @apply xl:text-28 mt-5;
     }
 
     .announcement .contain .btn_banner {
-        @apply w-186 xl:w-[214px] h-48 xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36
+        @apply w-186 xl:w-[214px] h-48 xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36;
     }
     .announcement .play{
-        @apply absolute bottom-5 left-5 animate-pulse
+        @apply absolute bottom-5 left-5 animate-pulse;
     }
 
 
     .main_wrapper {
-        @apply  xl:w-[1480px]  m-auto p-2 xl:p-0
+        @apply  xl:w-1480 m-auto p-2 xl:p-0;
     }
 
+
     .socil-icon {
-        @apply absolute right-5 top-2 flex gap-2
+        @apply absolute right-5 top-2 flex gap-2;
     }
 
     .sound {
-        @apply text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex justify-center gap-2  cursor-pointer text-15
+        @apply text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex justify-center gap-2  cursor-pointer text-15;
     }
 
     .like {
-        @apply rounded-full h-24 w-24 bg-Gray-100 flex items-center justify-center cursor-pointer
+        @apply rounded-full h-24 w-24 bg-Gray-100 flex items-center justify-center cursor-pointer;
     }
 
+
     .trending-swiper .play_btn {
-        @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-[#0269ff] hidden cursor-pointer
+        @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-[#0269ff] hidden cursor-pointer;
     }
 
     .trending-swiper .swiper-slide {
-        @apply hover:bg-Gray-200 p-2 rounded-xl
+        @apply hover:bg-Gray-200 p-2 rounded-xl;
     }
 
     .trending-swiper .swiper-slide:hover .play_btn {
-        @apply block
+        @apply block;
     }
    
     .slider-button {
-        @apply w-87 flex items-center justify-between gap-2
+        @apply w-87 flex items-center justify-between gap-2;
     }
 
     .prev-btn, .next-btn {
-        @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-12
+        @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-12;
     }
 
     /* trending-list */
     .trending-list .list{
-            @apply h-[84px] w-full  flex items-center justify-around
+            @apply h-[84px] w-full  flex items-center justify-around;
     }
     .trending-list .list_text{
-        @apply w-[100px] sm:w-[250px]  xl:w-[320px] overflow-hidden
+        @apply w-100 sm:w-250 xl:w-[320px] overflow-hidden;
     }
     .trending-list .list_items{
-        @apply hidden xl:block text-13
+        @apply hidden xl:block text-13;
     }
     .trending-list .list_btn{
-        @apply  p-1 px-3 border border-Gray-500 text-11 rounded-md w-[58px]
+        @apply  p-1 px-3 border border-Gray-500 text-11 rounded-md w-[58px];
     }
     .pages{
-        @apply flex justify-center items-center py-10
+        @apply flex justify-center items-center py-10;
     }
     .pages .number,.pages .number2{
-        @apply text-center w-[25px] rounded-md bg-Blue
+        @apply text-center w-[25px] rounded-md bg-Blue;
     }
     .pages .number2 {
-        @apply bg-transparent hover:bg-Blue
+        @apply bg-transparent hover:bg-Blue;
     }
 
     /* browse */
     .browse .browse-genar {
-        @apply h-[332px] grid grid-cols-2 md:grid-cols-3 gap-16
+        @apply h-[332px] grid grid-cols-2 md:grid-cols-3 gap-16;
     }
 
     .browse .browse-murge {
-        @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden 
+        @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden ;
     }
 
     .browse .browse-murge .murges {
-        @apply absolute top-0 left-0 bg-gradient-to-r from-[#101010] via-[#101010da] to-[#101010] h-[180px] w-full
+        @apply absolute top-0 left-0 bg-gradient-to-r from-[#101010] via-[#101010da] to-[#101010] h-[180px] w-full;
     }
 
     .browse .browse-murge .text {
-        @apply absolute top-0 left-0 h-full w-full flex justify-center items-center font-semibold text-24 md:text-28 font-Circular
+        @apply absolute top-0 left-0 h-full w-full flex justify-center items-center font-semibold text-24 md:text-28 font-Circular;
     }
 
     .browse .title {
-        @apply text-28
+        @apply text-28;
     }
 
     /* creater */
+    .creater{
+        @apply hover:scale-105 delay-300;
+    }
     .creaters{
-        @apply absolute right-0 top-8 h-[181px] w-[55px] flex flex-col justify-between
+        @apply absolute right-0 top-8 h-[181px] w-[55px] flex flex-col justify-between;
     }
     .creaters_items{
-        @apply w-full rounded-xl h-[55px] overflow-hidden bg-black cursor-pointer hover:shadow-sm  hover:shadow-black
+        @apply w-full rounded-xl h-[55px] overflow-hidden bg-black cursor-pointer hover:shadow-sm  hover:shadow-black;
     }
 
     /* contact */
     .contact{
-        @apply h-auto xl:h-[492px] rounded-3xl my-5 overflow-hidden relative 
+        @apply h-auto xl:h-[492px] rounded-3xl my-5 overflow-hidden relative ;
     }
     .contact p,.contact1 p{
-        @apply text-16
+        @apply text-16;
     }
     .contact-items-1{
-        @apply w-full xl:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 py-50 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c]
+        @apply w-full xl:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 xl:py-70 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c];
     }
     .contact1{
-        @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0
+        @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0;
     }
-    .contact_btn{
-        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-[147px] h-40 mt-20
+    .contact-btn{
+        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-[147px] h-40 mt-20;
     }
-    .message_btn{
-        @apply w-full xl:w-[262px] 
+    .message-btn{
+        @apply w-full xl:w-[211px] gap-10;
     }
-    .contact_btn1{
-        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-full h-40 mt-4 xl:mt-0 
+    .contact-btn1{
+        @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-full h-40 mt-4 xl:mt-0 ;
     }
     .mail{
-        @apply flex items-center ps-4 bg-white rounded-full w-full xl:w-[211px] h-40 
+        @apply flex items-center ps-4 bg-white rounded-full w-full xl:w-[211px] h-40 ;
     }
     input::placeholder{
-        @apply text-Black-400 text-16
+        @apply text-Black-400 text-16;
     }
     .email{
-        @apply h-auto xl:h-60 flex flex-wrap items-center justify-between p-3 rounded-full xl:bg-white   
+        @apply h-auto xl:h-60 flex flex-wrap items-center justify-between p-3 rounded-full xl:bg-white ;  
     }
 
 
     /* footer */
     footer {
-        @apply bg-black xl:h-[113px]
+        @apply bg-black xl:h-[113px];
     }
     footer li{
-        @apply mt-10 xl:mt-auto
+        @apply mt-10 xl:mt-auto;
 
     }
 
 }
 
-.trending-swiper-next, .trending-swiper-prev, .exclusives-swiper-next, .exclusives-swiper-prev,.creater-swiper-prev,.creater-swiper-next {
+.trending-swiper-next, .trending-swiper-prev,
+.exclusives-swiper-next,.exclusives-swiper-prev,
+.creater-swiper-prev,.creater-swiper-next {
     top: unset !important;
     left: unset !important;
     right: unset !important;

@@ -1617,6 +1617,16 @@ body {
 
 /* creater */
 
+.creater {
+  transition-delay: 300ms;
+}
+
+.creater:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .creaters {
   position: absolute;
   right: 0px;
@@ -1679,8 +1689,6 @@ body {
   --tw-gradient-stops: var(--tw-gradient-from), #070408 var(--tw-gradient-via-position), var(--tw-gradient-to);
   --tw-gradient-to: #0400075c var(--tw-gradient-to-position);
   padding: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 @media (min-width: 1200px) {
@@ -1689,6 +1697,8 @@ body {
     height: 100%;
     width: 50%;
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -1705,7 +1715,7 @@ body {
   --tw-gradient-to: #101010f9 var(--tw-gradient-to-position);
 }
 
-.contact_btn {
+.contact-btn {
   margin-top: 20px;
   display: flex;
   height: 40px;
@@ -1719,17 +1729,18 @@ body {
   padding: 0.25rem;
 }
 
-.message_btn {
+.message-btn {
   width: 100%;
+  gap: 2.5rem;
 }
 
 @media (min-width: 1200px) {
-  .message_btn {
-    width: 262px;
+  .message-btn {
+    width: 211px;
   }
 }
 
-.contact_btn1 {
+.contact-btn1 {
   margin-top: 1rem;
   display: flex;
   height: 40px;
@@ -1744,7 +1755,7 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .contact_btn1 {
+  .contact-btn1 {
     margin-top: 0px;
   }
 }
@@ -1819,7 +1830,9 @@ footer li {
   }
 }
 
-.trending-swiper-next, .trending-swiper-prev, .exclusives-swiper-next, .exclusives-swiper-prev,.creater-swiper-prev,.creater-swiper-next {
+.trending-swiper-next, .trending-swiper-prev,
+.exclusives-swiper-next,.exclusives-swiper-prev,
+.creater-swiper-prev,.creater-swiper-next {
   top: unset !important;
   left: unset !important;
   right: unset !important;
@@ -1936,6 +1949,10 @@ footer li {
 
   .xl\:gap-28 {
     gap: 28px;
+  }
+
+  .xl\:p-10 {
+    padding: 10px;
   }
 
   .xl\:text-38 {

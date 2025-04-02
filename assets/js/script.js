@@ -14,6 +14,7 @@ toggle.addEventListener("click", function () {
 let search = document.getElementById("search-icon");
 let searchbar = document.getElementById("search");
 let close = document.getElementById("close");
+
 search.addEventListener("click", function () {
   searchbar.style.display = "block";
 });
