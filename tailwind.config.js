@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        Circular: ["Flow Circular", "system-ui"],
+        Circular: ['Euclid Circular B', "sans-serif"],
       },
       colors: {
         transparent: "transparent",
@@ -144,6 +144,7 @@ module.exports = {
         60: "60px",
         124: "124px",
         173: "173.6px",
+        250:"250px",
         252: "252.2px",
         321: "321px",
         387: "387.2px",

@@ -35,29 +35,31 @@
     }
 
     .slid-img {
-        @apply h-173  479:h-[250px] sm:h-252 w-173  479:w-250 sm:w-252;
+        @apply h-173 479:h-250 sm:h-252 w-173  479:w-250 sm:w-252;
     }
-
     .title {
         @apply text-20 md:text-28 font-semibold mb-28 font-Circular;
     }
-
     .title img {
         @apply h-24 w-24 xl:h-28 xl:w-28;
     }
-
+    .title-contact{
+        @apply text-28 xl:text-38 font-700 sm:leading-46
+    }
     .h1 {
         @apply text-54 xl:text-64 font-bold;
     }
     .h2{
         @apply text-16 md:text-20 font-600;
     }
-    .h3 {
+    .title-card {
         @apply font-semibold text-20 mt-2;
     }
-
     .genre {
         @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400;
+    }
+    .content{
+        @apply text-Gray-600 mt-20
     }
 }
 
@@ -70,27 +72,27 @@
     .header .header-bottom {
         @apply h-50 flex justify-between items-center; 
     }
-
     .header .logo {
         @apply w-[176px] xl:w-[220px];
     }
-
     .header .navbar {
         @apply hidden xl:block;
     }
-
     .header .navbar ul{
         @apply h-50 flex items-center gap-32 cursor-pointer;
     }
     .header .navbar ul li a {
-        @apply text-16 hover:border-b;
+        @apply text-16 hover:border-b text-White-100;
+    }
+    .a{
+        @apply opacity-25 hover:opacity-100
     }
     /* menu */
     .menubar{
         @apply fixed right-0 top-[50px] z-30 bg-Black-100  h-auto w-[300px]  items-center p-20 text-20 font-700 hidden ;
     }
     .menubar a:hover{
-        @apply  border-b;
+        @apply border-b;
     }
     /* search */
     .search{
@@ -120,23 +122,21 @@
     .announcement img{
         @apply scale-110 xl:scale-100;
     }
-
     .announcement .announcement-prev {
         @apply h-124 w-38 bg-Black-500 absolute left-0 top-64 rounded-r-xl invisible xl:visible;
     }
-
     .announcement .announcement-next {
         @apply h-124 w-38 bg-Black-500 absolute right-0 top-64 rounded-l-xl invisible xl:visible;
     }
-
+    .announcement .swiper-slide{
+        @apply rounded-2xl overflow-hidden relative
+    }
     .announcement .contain {
         @apply absolute sm:left-20 bottom-52 text-center p-20 xl:w-[60%] ;
     }
-
     .announcement .contain p {
         @apply xl:text-28 mt-5;
     }
-
     .announcement .contain .btn_banner {
         @apply w-186 xl:w-[214px] h-48 xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36;
     }
@@ -149,38 +149,39 @@
         @apply  xl:w-1480 m-auto p-2 xl:p-0;
     }
 
-
     .socil-icon {
         @apply absolute right-5 top-2 flex gap-2;
     }
-
+    .source{
+        @apply absolute 991:right-2 right-6 top-2 flex gap-2;
+    }
     .sound {
         @apply text-Gray-400 rounded-full h-[22px] w-[53px] bg-Gray-100 flex justify-center gap-2  cursor-pointer text-15;
     }
-
     .like {
         @apply rounded-full h-24 w-24 bg-Gray-100 flex items-center justify-center cursor-pointer;
     }
 
 
+    /* trending */
     .trending-swiper .play_btn {
         @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-[#0269ff] hidden cursor-pointer;
     }
 
     .trending-swiper .swiper-slide {
-        @apply hover:bg-Gray-200 p-2 rounded-xl;
-    }
-
+        @apply hover:bg-Gray-200 p-2 rounded-xl overflow-hidden relative;
+    } 
     .trending-swiper .swiper-slide:hover .play_btn {
         @apply block;
     }
-   
     .slider-button {
         @apply w-87 flex items-center justify-between gap-2;
     }
-
     .prev-btn, .next-btn {
         @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-12;
+    }
+    .stash-exclusives .swiper-slide{
+        @apply rounded overflow-hidden relative p-2
     }
 
     /* trending-list */
@@ -210,19 +211,15 @@
     .browse .browse-genar {
         @apply h-[332px] grid grid-cols-2 md:grid-cols-3 gap-16;
     }
-
     .browse .browse-murge {
         @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden ;
     }
-
     .browse .browse-murge .murges {
         @apply absolute top-0 left-0 bg-gradient-to-r from-[#101010] via-[#101010da] to-[#101010] h-[180px] w-full;
     }
-
     .browse .browse-murge .text {
         @apply absolute top-0 left-0 h-full w-full flex justify-center items-center font-semibold text-24 md:text-28 font-Circular;
     }
-
     .browse .title {
         @apply text-28;
     }
@@ -236,6 +233,9 @@
     }
     .creaters_items{
         @apply w-full rounded-xl h-[55px] overflow-hidden bg-black cursor-pointer hover:shadow-sm  hover:shadow-black;
+    }
+    .top-creaters .swiper-slide{
+        @apply rounded overflow-hidden relative
     }
 
     /* contact */
@@ -274,6 +274,9 @@
     /* footer */
     footer {
         @apply bg-black xl:h-[113px];
+    }
+    footer ul{
+        @apply xl:flex gap-6 text-gray-500 text-center 
     }
     footer li{
         @apply mt-10 xl:mt-auto;
