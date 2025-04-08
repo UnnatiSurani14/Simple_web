@@ -55,6 +55,9 @@
     .title-card {
         @apply font-semibold text-20 mt-2;
     }
+    .subtitle-card{
+        @apply text-15 text-Gray-300
+    }
     .genre {
         @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400;
     }
@@ -165,7 +168,7 @@
 
     /* trending */
     .trending-swiper .play_btn {
-        @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-[#0269ff] hidden cursor-pointer;
+        @apply absolute top-[40%] left-[40%] h-46 w-46 rounded-full bg-Blue hidden cursor-pointer;
     }
 
     .trending-swiper .swiper-slide {
@@ -272,13 +275,13 @@
 
 
     /* footer */
-    footer {
+    .footer {
         @apply bg-black xl:h-[113px];
     }
-    footer ul{
-        @apply xl:flex gap-6 text-gray-500 text-center; 
+    .footer ul{
+        @apply xl:flex gap-6 text-Gray-500 text-center; 
     }
-    footer li{
+    .footer li{
         @apply mt-10 xl:mt-auto;
 
     }
