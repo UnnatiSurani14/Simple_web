@@ -896,10 +896,6 @@ body {
   height: 100%;
 }
 
-.w-\[142px\] {
-  width: 142px;
-}
-
 .w-\[150px\] {
   width: 150px;
 }
@@ -992,10 +988,6 @@ body {
   overflow: hidden;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -1027,11 +1019,6 @@ body {
 
 .p-5 {
   padding: 5px;
-}
-
-.px-20 {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .ps-2 {
@@ -1108,9 +1095,7 @@ body {
   position: sticky;
   top: 0px;
   z-index: 30;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(24 24 24 / var(--tw-border-opacity, 1));
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 24 / var(--tw-bg-opacity, 1));
 }
@@ -1118,6 +1103,7 @@ body {
 .header .header-bottom {
   display: flex;
   height: 50px;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -1168,8 +1154,16 @@ body {
   opacity: 1;
 }
 
-.header .cart {
-  padding-inline-start: 10px;
+.cart {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 1200px) {
+  .cart {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* menu */
@@ -1979,10 +1973,6 @@ input::placeholder {
     position: absolute;
   }
 
-  .xl\:m-30 {
-    margin: 30px;
-  }
-
   .xl\:mb-100 {
     margin-bottom: 100px;
   }
@@ -2037,10 +2027,5 @@ input::placeholder {
 
   .xl\:p-20 {
     padding: 20px;
-  }
-
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }

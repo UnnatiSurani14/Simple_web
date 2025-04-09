@@ -70,10 +70,10 @@
 
     /* header */
     .header{
-        @apply sticky top-0 border border-Black-100 bg-Black-100 z-30;
+        @apply w-full sticky top-0 bg-Black-100 z-30;
     }
     .header .header-bottom {
-        @apply h-50 flex justify-between items-center; 
+        @apply h-50 w-full flex justify-between items-center; 
     }
     .header .logo {
         @apply w-[176px] xl:w-[220px];
@@ -90,8 +90,8 @@
     .a{
         @apply opacity-25 hover:opacity-100;
     }
-    .header .cart{
-        @apply ps-10
+    .cart{
+        @apply px-10 xl:px-0
     }
 
     /* menu */
