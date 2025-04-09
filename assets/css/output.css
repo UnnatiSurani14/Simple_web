@@ -1391,7 +1391,7 @@ body {
 
 @media (min-width: 1200px) {
   .main_wrapper {
-    width: 1480px;
+    width: 79%;
     padding: 0px;
   }
 }

@@ -156,7 +156,7 @@
 
 
     .main_wrapper {
-        @apply  xl:w-1480 m-auto p-2 xl:p-0;
+        @apply xl:w-[79%] m-auto p-2 xl:p-0;
     }
 
     .socil-icon {
