@@ -26,7 +26,7 @@
 
 @layer components {
     .btn {
-        @apply h-46 w-[103px] bg-White-100 text-Black-200 rounded-full pt-2.5 ps-6 font-600 hover:bg-White-200 hover:shadow-sm hover:shadow-White-100;
+        @apply py-10 px-20 bg-White-100 text-Black-200 rounded-full font-600 hover:bg-White-200 hover:shadow-sm hover:shadow-White-100;
     }
 
     .swiper-button-next,
@@ -56,7 +56,7 @@
         @apply font-semibold text-20 mt-2;
     }
     .subtitle-card{
-        @apply text-15 text-Gray-300
+        @apply text-15 text-Gray-300;
     }
     .genre {
         @apply bg-Gray-100 rounded-full w-60 h-[22px] mt-2 text-center text-15 text-Gray-400;
@@ -90,6 +90,10 @@
     .a{
         @apply opacity-25 hover:opacity-100;
     }
+    .header .cart{
+        @apply ps-10
+    }
+
     /* menu */
     .menubar{
         @apply fixed right-0 top-[50px] z-30 bg-Black-100  h-auto w-[300px]  items-center p-20 text-20 font-700 hidden;
@@ -122,6 +126,9 @@
     .announcement .swiper-pagination-bullet-active {
         @apply bg-White-100;
     }
+    .announcement .slid-img{
+        @apply h-full w-full
+    }
     .announcement img{
         @apply scale-110 xl:scale-100;
     }
@@ -141,7 +148,7 @@
         @apply xl:text-28 mt-5;
     }
     .announcement .contain .btn_banner {
-        @apply w-186 xl:w-[214px] h-48 xl:h-[68px] rounded-full bg-Blue text-center text-20 uppercase mt-36;
+        @apply px-20 py-15 xl:px-40 xl:py-20 rounded-full bg-Blue text-center text-20 uppercase;
     }
     .announcement .play{
         @apply absolute bottom-5 left-5 animate-pulse;
@@ -189,15 +196,15 @@
 
     /* trending-list */
     .trending-list .list{
-            @apply h-[84px] w-full  flex items-center justify-around;
+        @apply h-[84px] w-full  flex items-center justify-around;
     }
-    .trending-list .list_text{
+    .trending-list .list-text{
         @apply w-100 sm:w-250 xl:w-[320px] overflow-hidden;
     }
-    .trending-list .list_items{
+    .trending-list .list-items{
         @apply hidden xl:block text-13;
     }
-    .trending-list .list_btn{
+    .trending-list .list-btn{
         @apply  p-1 px-3 border border-Gray-500 text-11 rounded-md w-[58px];
     }
     .pages{
@@ -234,7 +241,7 @@
     .creaters{
         @apply absolute right-0 top-8 h-[181px] w-[55px] flex flex-col justify-between;
     }
-    .creaters_items{
+    .creaters-items{
         @apply w-full rounded-xl h-[55px] overflow-hidden bg-black cursor-pointer hover:shadow-sm  hover:shadow-black;
     }
     .top-creaters .swiper-slide{
@@ -243,19 +250,19 @@
 
     /* contact */
     .contact{
-        @apply h-auto xl:h-[492px] rounded-3xl my-5 overflow-hidden relative;
-    }
-    .contact p,.contact1 p{
-        @apply text-16;
+        @apply h-auto xl:h-[492px] rounded-3xl my-5 overflow-hidden relative w-full xl:w-[492px] bg-Black-300;
     }
     .contact-items-1{
-        @apply w-full md:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 xl:py-70 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c];
+        @apply w-full md:w-[50%] xl:absolute top-0 h-auto xl:h-full p-30 xl:py-70  z-20 bg-gradient-to-b xl:bg-gradient-to-r from-[#111111] via-[#070408] to-[#0400075c];
     }
     .contact1{
-        @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0;
+        @apply  bg-gradient-to-r from-[#101010fb] via-[#101010e4] to-[#101010f9] rounded-3xl overflow-hidden z-0  w-full h-auto xl:h-[408px] relative mt-16;
     }
     .contact-btn{
         @apply flex justify-center items-center gap-2 p-1 bg-Blue rounded-full w-[147px] h-40 mt-20;
+    }
+    .contact-1{
+        @apply flex flex-wrap w-full xl:w-[962px] h-[534px] md:h-[492px] rounded-3xl overflow-hidden relative
     }
     .message-btn{
         @apply w-full xl:w-[211px] gap-10;
@@ -281,9 +288,11 @@
     .footer ul{
         @apply xl:flex gap-6 text-Gray-500 text-center; 
     }
-    .footer li{
+    .footer ul li{
         @apply mt-10 xl:mt-auto;
-
+    }
+    .footer ul li a:hover{
+        @apply text-White-100
     }
 
 }
