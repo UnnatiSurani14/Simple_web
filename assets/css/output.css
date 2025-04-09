@@ -1893,6 +1893,11 @@ input::placeholder {
   width: auto !important;
 }
 
+.active\:text-White-100:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 @media (min-width: 640px) {
   .sm\:w-auto {
     width: auto;
