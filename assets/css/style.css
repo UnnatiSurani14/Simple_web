@@ -6,19 +6,15 @@
     body {
         @apply m-0 p-0 bg-Black-100 text-White-100 font-inter;
     }
-
     * {
         @apply m-0 p-0 box-border;
     }
-
     *::-webkit-scrollbar-track {
         @apply bg-black;
     }
-
     *::-webkit-scrollbar {
         @apply bg-black w-0;
     }
-
     *::-webkit-scrollbar-thumb {
         @apply bg-black;
     }
@@ -224,7 +220,7 @@
         @apply h-[332px] grid grid-cols-2 md:grid-cols-3 gap-16;
     }
     .browse .browse-murge {
-        @apply rounded-xl hover:border-Blue hover:border-2 overflow-hidden;
+        @apply relative rounded-xl hover:border-Blue hover:border-2 overflow-hidden;
     }
     .browse .browse-murge .murges {
         @apply absolute top-0 left-0 bg-gradient-to-r from-[#101010] via-[#101010da] to-[#101010] h-[180px] w-full;
