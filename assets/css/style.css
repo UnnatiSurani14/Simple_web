@@ -40,9 +40,6 @@
     .title {
         @apply text-20 md:text-28 font-semibold mb-28 font-Circular;
     }
-    /* .title img {
-        @apply h-24 w-24 xl:h-28 xl:w-28;
-    } */
     .title-contact{
         @apply text-28 xl:text-38 font-700 sm:leading-46;
     }
@@ -63,6 +60,11 @@
     }
     .content{
         @apply text-Gray-600 mt-20;
+    }
+    .trending-swiper-next, .trending-swiper-prev,
+    .exclusives-swiper-next,.exclusives-swiper-prev,
+    .creater-swiper-prev,.creater-swiper-next{
+        @apply relative top-0 right-0 left-0 bottom-0 !important
     }
 }
 
@@ -188,7 +190,7 @@
         @apply w-87 flex items-center justify-between gap-2;
     }
     .prev-btn, .next-btn {
-        @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-12;
+        @apply h-35 w-35 rounded-full bg-Gray-100 pt-17 ps-5;
     }
     .stash-exclusives .swiper-slide{
         @apply rounded overflow-hidden relative p-2;
@@ -297,12 +299,3 @@
 
 }
 
-.trending-swiper-next, .trending-swiper-prev,
-.exclusives-swiper-next,.exclusives-swiper-prev,
-.creater-swiper-prev,.creater-swiper-next {
-    top: unset !important;
-    left: unset !important;
-    right: unset !important;
-    bottom: unset !important;
-    width: auto !important;
-}
