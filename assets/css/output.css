@@ -705,17 +705,9 @@ body {
   }
 }
 
-.title img {
-  height: 24px;
-  width: 24px;
-}
-
-@media (min-width: 1200px) {
-  .title img {
-    height: 28px;
-    width: 28px;
-  }
-}
+/* .title img {
+        @apply h-24 w-24 xl:h-28 xl:w-28;
+    } */
 
 .title-contact {
   font-size: 28px;
@@ -1391,7 +1383,7 @@ body {
 
 @media (min-width: 1200px) {
   .main_wrapper {
-    width: 77.5%;
+    width: 1480px;
     padding: 0px;
   }
 }
